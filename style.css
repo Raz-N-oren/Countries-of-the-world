@@ -1,0 +1,58 @@
+.search-button{
+    display: flex;
+    justify-content: left;
+}
+
+#search-countries-input{
+    margin: 0px 10px 2px 0px;
+    height: 29px;
+}
+
+#show-searched-countries-button{
+    margin: 0px 10px 2px 0px;
+}
+
+#show-searched-countries-button:hover{
+    background-color: lightblue;
+}
+
+table {
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#get-all-countries-button:hover{
+    background-color: lightblue;
+}
+
+body::after {
+    display: block;
+    content: '';
+    height: 40px;
+}
+
+#back-to-top-div{
+    border: solid black 1px;
+    width: 52px;
+    font-size: 18px;
+    margin-left: 5%;
+    height: 31px;
+    position: fixed;
+    bottom: 0;
+}
+
+#back-to-top{
+    margin: 20% 0% 0% 20%;
+    color: black;
+}
+
+#info-list{
+    margin-bottom: 2%;
+}
+
+
+
