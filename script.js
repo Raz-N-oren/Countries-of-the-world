@@ -9,6 +9,7 @@
     $(function () {
         let url = "https://restcountries.com/v3.1/all";
         $.get(url).then(function (countries) {
+
             countriesArray = countries;
             countriesArray.sort(compareFunction);
 
@@ -39,8 +40,8 @@
     });
 
     function compareFunction(a, b) {
-        let nameA = a.name.common.toLowerCase(); // ignore case
-        let nameB = b.name.common.toLowerCase(); // ignore case
+        let nameA = a.name.common.toLowerCase(); 
+        let nameB = b.name.common.toLowerCase(); 
 
         if (nameA < nameB) {
             return -1;
@@ -49,7 +50,6 @@
             return 1;
         }
 
-        // names must be equal
         return 0;
     }
 
@@ -103,7 +103,6 @@
                     addCalculateAverageOfCountriesPopulationToUi(countries);
                     addCountriesToUI(countries);
                     addCountriesRegionToUI(countries);
-
                 }
 
             });
@@ -148,7 +147,6 @@
             `<li><p> Average Population: ${averageOfPopulation}</p></li>`
         $("#info-list").append(averageOfCountriesPopulationParagraph);
 
-
     }
 
     function addCountriesRegionToUI(countriesArray) {
@@ -178,7 +176,4 @@
 
     }
 
-
 })();
-
-
